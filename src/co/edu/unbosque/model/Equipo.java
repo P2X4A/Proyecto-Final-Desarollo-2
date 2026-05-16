@@ -94,6 +94,10 @@ public abstract class Equipo {
 	}
 	
 	private int calcularPosesion() {
+		return 0;
+	}
+	
+	private void actualizarEstadistica() {
 		
 	}
 
