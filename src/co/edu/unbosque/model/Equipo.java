@@ -88,17 +88,27 @@ public abstract class Equipo {
 	}
 	
 	private int calcularPoderOfensivo() {
-		
-		
-		return 0;
+	    String[] partes = formacion.split("-");
+	    int delanteros = Integer.parseInt(partes[2]);
+	    return poderOfensivoBase + (delanteros * 5);
 	}
-	
+
 	private int calcularPosesion() {
-		return 0;
+	    String[] partes = formacion.split("-");
+	    int mediocampistas = Integer.parseInt(partes[1]);
+	    return posesionBase + (mediocampistas * 5);
 	}
-	
-	private void actualizarEstadistica() {
-		
+
+	private void actualizarEstadistica(int golesFavor, int golesContra) {
+	    partidosJugados++;
+
+	    if (golesFavor > golesContra) {
+	        partidosGanados++;
+	    } else if (golesFavor < golesContra) {
+	        partidosPerdidos++;
+	    } else {
+	        partidosEmpatados++;
+	    }
 	}
 
 }

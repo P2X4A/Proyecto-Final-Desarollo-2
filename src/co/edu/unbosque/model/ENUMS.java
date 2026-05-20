@@ -1,13 +1,17 @@
 package co.edu.unbosque.model;
 
 public class ENUMS {
-	enum posicion{
+	static enum posicion{
 		DELANTERO,
 		MEDIOCAMPISTA,
 		DEFENSA,
 		ARQUERO
 	}
 	
-//	enum 
+	static enum estadoPartido{
+		PENDIENTE,
+		EN_CURSO,
+		FINALIZADO
+	}
 
 }
