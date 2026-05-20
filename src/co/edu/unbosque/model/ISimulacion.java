@@ -1,5 +1,6 @@
 package co.edu.unbosque.model;
 
-public class ISimulacion {
-
+public interface ISimulacion {
+	EventoPartido simularMinutoPartido(int minuto);
+	int obtenerAccionesGol();
 }
