@@ -5,9 +5,9 @@ import java.util.List;
 import co.edu.unbosque.model.Torneo;
 
 public interface ITorneoRepository {
-	void guardarPartido(Torneo torneo);
-	Torneo cargarPartido(String id);
-	List<String> listaPartidos();
-	
+	void guardarTorneo(Torneo torneo);
+	Torneo cargarTorneo(String nombre);
+	List<String> listaTorneos();
+
 
 }
